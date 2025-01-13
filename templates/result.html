@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Search Results</title>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <h2 class="section-text">Search Results</h2>
+        {% if error %}
+        <p>{{ error }}</p>
+        {% else %}
+        <table>
+          <thead>
+            <tr>
+              <th>Movie Name</th>
+              <th>Director</th>
+              <th>Movie Type</th>
+              <th>Show Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for movie in movies %}
+            <tr>
+              <td>{{ movie.MovieName }}</td>
+              <td>{{ movie.Director }}</td>
+              <td>{{ movie.MovieType }}</td>
+              <td>{{ movie.StartTime }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+      </section>
+    </main>
+  </body>
+</html>
