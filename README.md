@@ -48,6 +48,17 @@ A database-driven application designed to manage a movie theater's operations, i
 
 ---
 
+## Screenshots
+
+Below are screenshots of the system:
+
+![search query](https://github.com/user-attachments/assets/6a95888e-e8fa-4bcf-b361-40b3f71ee6d7)
+![result](https://github.com/user-attachments/assets/70fef46f-ff23-4737-8d6b-308b214fcd11)
+
+## Installation
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML, CSS
